@@ -1,0 +1,66 @@
+{
+  "name": "healthyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "webpack": "webpack -w",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4-Tenacious-Tasman/HealthyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4-Tenacious-Tasman/HealthyFood/issues"
+  },
+  "homepage": "https://github.com/4-Tenacious-Tasman/HealthyFood#readme",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.4.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "compression": "^1.7.4",
+    "css-loader": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "node": "^15.12.0",
+    "pg": "^8.5.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.5.2",
+    "react-calendar": "^3.3.1",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1",
+    "file-loader": "^6.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "img-loader": "^3.0.2",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/enzyme.config.js",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  }
+}
